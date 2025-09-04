@@ -78,6 +78,303 @@
     <a href="#">Saúde Mental</a>
     <a href="#">Contato</a>
   </nav>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guia Completo de Saúde e Bem-Estar: Hábitos, Sono, Exercícios e Nutrição</title>
+  <meta name="description" content="Guia prático e completo de saúde e bem-estar com hábitos diários, alimentação, sono, exercícios, saúde mental, rotina semanal e respostas para dúvidas frequentes." />
+  <meta name="author" content="Seu Nome" />
+
+  <!-- (Opcional) Se já tiver o script do AdSense no HEAD do site, não duplique -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <style>
+    :root{
+      --bg:#f7f8fa; --fg:#111; --muted:#6b7280; --primary:#0ea5e9; --card:#ffffff;
+      --radius:14px;
+    }
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial;
+      background:var(--bg); color:var(--fg); line-height:1.7;
+    }
+    header.hero{
+      background:linear-gradient(135deg,#e0f2fe,#f5f3ff);
+      padding:48px 16px; text-align:center; border-bottom:1px solid #e5e7eb;
+    }
+    .container{max-width:920px; margin:0 auto; padding:24px 16px;}
+    h1,h2,h3{line-height:1.25}
+    h1{font-size:2rem; margin:0 0 8px}
+    .subtitle{color:var(--muted); margin:0 auto 8px; max-width:800px}
+    nav.toc{
+      background:var(--card); border-radius:var(--radius); padding:16px; border:1px solid #e5e7eb; margin:24px 0;
+    }
+    nav.toc a{color:var(--primary); text-decoration:none}
+    nav.toc li{margin:6px 0}
+    article{
+      background:var(--card); padding:24px; border-radius:var(--radius); border:1px solid #e5e7eb;
+    }
+    .note{
+      background:#f0f9ff; border-left:4px solid var(--primary); padding:12px 14px; border-radius:10px; color:#0b536b;
+    }
+    .grid{
+      display:grid; gap:16px;
+    }
+    @media(min-width:800px){ .grid-2{ grid-template-columns:1fr 1fr; } }
+    figure{margin:0; padding:0}
+    figcaption{font-size:.9rem; color:var(--muted); text-align:center; margin-top:6px}
+    table{width:100%; border-collapse:collapse; margin:16px 0}
+    th,td{border:1px solid #e5e7eb; padding:10px; text-align:left}
+    th{background:#f8fafc}
+    .faq details{border:1px solid #e5e7eb; background:#fafafa; border-radius:10px; padding:12px 14px; margin:10px 0}
+    .tag{display:inline-block; font-size:.85rem; background:#eef2ff; color:#4338ca; padding:4px 10px; border-radius:999px; margin:6px 6px 0 0}
+    footer.article{margin-top:24px; color:var(--muted)}
+    .cta{
+      background:#ecfeff; border:1px dashed #67e8f9; border-radius:12px; padding:16px; margin-top:16px
+    }
+    a{color:var(--primary)}
+  </style>
+
+  <!-- Dados estruturados (opcional para SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Guia Completo de Saúde e Bem-Estar",
+    "author":{"@type":"Person","name":"Seu Nome"},
+    "datePublished":"2025-01-01",
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://seusite.exemplo/artigo-saude"},
+    "description":"Um guia prático de saúde e bem-estar com passos diários, nutrição, sono, exercícios e saúde mental."
+  }
+  </script>
+</head>
+<body>
+
+<header class="hero">
+  <div class="container">
+    <h1>Guia Completo de Saúde e Bem-Estar</h1>
+    <p class="subtitle">Hábitos simples, evidências modernas e uma rotina prática de 7 dias para você se sentir mais disposto, dormir melhor e cuidar do corpo e da mente.</p>
+    <p>
+      <span class="tag">Nutrição</span>
+      <span class="tag">Sono</span>
+      <span class="tag">Exercícios</span>
+      <span class="tag">Saúde Mental</span>
+      <span class="tag">Rotina Saudável</span>
+    </p>
+  </div>
+</header>
+
+<main class="container">
+  <nav class="toc" aria-label="Sumário">
+    <strong>Navegue pelo artigo</strong>
+    <ol>
+      <li><a href="#introducao">Introdução: o que é bem-estar</a></li>
+      <li><a href="#pilares">Os 5 pilares fundamentais</a></li>
+      <li><a href="#alimentacao">Alimentação: simples e possível</a></li>
+      <li><a href="#sono">Sono: recarregando de verdade</a></li>
+      <li><a href="#exercicio">Exercícios: comece onde você está</a></li>
+      <li><a href="#mental">Saúde mental e estresse</a></li>
+      <li><a href="#habitos">Como criar hábitos que duram</a></li>
+      <li><a href="#checkups">Check-ups e prevenção</a></li>
+      <li><a href="#rotina7">Rotina prática de 7 dias</a></li>
+      <li><a href="#faq">Perguntas frequentes</a></li>
+      <li><a href="#conclusao">Conclusão</a></li>
+    </ol>
+  </nav>
+
+  <article itemscope itemtype="https://schema.org/Article">
+    <section id="introducao">
+      <h2 itemprop="headline">Introdução: o que é bem-estar</h2>
+      <p>Saúde e bem-estar vão além de “não estar doente”. Envolve energia para viver o dia, clareza mental para tomar decisões, relações saudáveis e um senso de propósito. O caminho para isso não é uma única dieta da moda nem um treino milagroso: é a soma de pequenas escolhas consistentes. Este guia foi pensado para caber na rotina de quem estuda, trabalha e cuida da casa – ou tudo isso ao mesmo tempo.</p>
+      <p class="note"><strong>Aviso:</strong> este conteúdo é informativo e não substitui avaliação médica. Se você tem condição de saúde, gravidez, lesão ou usa medicamentos, procure um profissional de confiança.</p>
+    </section>
+
+    <section id="pilares">
+      <h2>Os 5 pilares fundamentais</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3>1) Alimentação que sustenta</h3>
+          <p>Comer bem não é comer pouco: é priorizar alimentos in natura e minimamente processados, proteínas de boa qualidade, fibras e água. Evite extremos: dietas muito restritivas costumam falhar por falta de aderência.</p>
+        </div>
+        <div>
+          <h3>2) Movimento diário</h3>
+          <p>O corpo foi feito para se mover. Alternar entre treinos de força, caminhadas e alongamentos melhora humor, postura e metabolismo. Dez minutos contam – e muito.</p>
+        </div>
+        <div>
+          <h3>3) Sono restaurador</h3>
+          <p>Dormir bem é o alicerce de todas as outras áreas. Sem sono adequado, a fome aumenta, a paciência diminui e o rendimento cai.</p>
+        </div>
+        <div>
+          <h3>4) Gestão do estresse</h3>
+          <p>Estresse existe; o que muda é nossa resposta. Técnicas de respiração, pausas conscientes e limites claros são ferramentas poderosas.</p>
+        </div>
+        <div>
+          <h3>5) Relacionamentos e propósito</h3>
+          <p>Conexões sociais e senso de significado protegem a saúde mental, reduzem comportamentos de risco e tornam os hábitos saudáveis mais fáceis de manter.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="alimentacao">
+      <h2>Alimentação: simples e possível</h2>
+      <p>Esqueça regras complicadas. Comece com a “regra do prato”: metade do prato com vegetais, um quarto com proteína (feijões, ovos, peixes, frango, carnes magras ou tofu) e um quarto com carboidratos de qualidade (arroz integral, batata, mandioca, milho, quinoa). Adicione uma fonte de gordura boa, como azeite, castanhas ou abacate.</p>
+      <h3>Hidratação sem drama</h3>
+      <p>Água é combustível para o cérebro e o corpo. Um alvo simples é manter urina de cor amarelo-claro ao longo do dia. Leve uma garrafa com você e beba aos poucos, principalmente em dias quentes ou de treino.</p>
+
+      <h3>Lanches inteligentes</h3>
+      <ul>
+        <li>Fruta com amendoim ou castanhas.</li>
+        <li>Iogurte natural com aveia.</li>
+        <li>Sanduíche de pão integral com queijo branco e tomate.</li>
+        <li>Palitos de cenoura e pepino com homus.</li>
+      </ul>
+
+      <h3>Exemplo de cardápio simples</h3>
+      <table aria-label="Exemplo de cardápio diário">
+        <thead>
+          <tr><th>Refeição</th><th>Ideia prática</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Café da manhã</td><td>Ovos mexidos, fruta e pão integral</td></tr>
+          <tr><td>Almoço</td><td>Arroz, feijão, frango grelhado e salada colorida</td></tr>
+          <tr><td>Lanche</td><td>Iogurte natural com aveia e banana</td></tr>
+          <tr><td>Jantar</td><td>Peixe assado, legumes salteados e batata</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Doces e ultraprocessados</h3>
+      <p>Podem existir na vida real, mas não devem ser a base da alimentação. Deixar para ocasiões especiais e reduzir a frequência já traz benefícios sem a sensação de proibição total.</p>
+    </section>
+
+    <section id="sono">
+      <h2>Sono: recarregando de verdade</h2>
+      <p>Adultos geralmente se beneficiam de 7 a 9 horas por noite. Mais do que quantidade, buscamos regularidade: dormir e acordar em horários próximos nos dias de semana e, na medida do possível, também no fim de semana.</p>
+      <h3>Higiene do sono</h3>
+      <ul>
+        <li>Exponha-se à luz natural pela manhã e reduza luzes fortes à noite.</li>
+        <li>Evite cafeína após o meio da tarde e grandes refeições perto de deitar.</li>
+        <li>Crie um ritual relaxante: banho morno, leitura leve, respiração.</li>
+        <li>Mantenha o quarto escuro, silencioso e fresco.</li>
+      </ul>
+      <p>Se o sono não melhora com medidas simples, converse com um profissional para investigar causas como apneia, ansiedade ou dor crônica.</p>
+    </section>
+
+    <section id="exercicio">
+      <h2>Exercícios: comece onde você está</h2>
+      <p>Não é necessário academia cara para colher benefícios. O mais importante é a consistência. Uma combinação básica inclui <strong>força</strong> (2–3x/semana), <strong>cardio</strong> leve a moderado (caminhadas, bike) e <strong>mobilidade</strong> (alongamentos).</p>
+      <h3>Sequência de 10 minutos para iniciantes (sem equipamentos)</h3>
+      <ol>
+        <li>Aquecimento: 2 min caminhando no lugar, círculos de braços e quadris.</li>
+        <li>Agachamentos livres: 3 × 12 repetições.</li>
+        <li>Flexões de parede ou joelhos: 3 × 8–10.</li>
+        <li>Remada com elástico ou toalha: 3 × 12.</li>
+        <li>Prancha: 3 × 20–30 segundos.</li>
+        <li>Alongamento leve de pernas e costas: 1–2 min.</li>
+      </ol>
+      <p>Aumente gradualmente o tempo total ou a dificuldade. Se houver dor ou limitação, adapte os movimentos.</p>
+    </section>
+
+    <section id="mental">
+      <h2>Saúde mental e manejo do estresse</h2>
+      <p>O bem-estar emocional sustenta escolhas melhores no dia a dia. Quando estamos sobrecarregados, hábitos saudáveis viram os primeiros a cair. Três práticas simples:</p>
+      <ul>
+        <li><strong>Respiração 4-4-6</strong>: inspire por 4s, segure 4s, expire por 6s por 1–3 min.</li>
+        <li><strong>Micro-pausas</strong>: a cada 60–90 minutos, levante, beba água e olhe a distância.</li>
+        <li><strong>Limites digitais</strong>: defina horários sem celular, especialmente antes de dormir.</li>
+      </ul>
+      <p>Procure rede de apoio. Se sinais como tristeza persistente, ansiedade intensa, mudanças de apetite ou sono durarem semanas, busque atendimento psicológico/psiquiátrico.</p>
+    </section>
+
+    <section id="habitos">
+      <h2>Como criar hábitos que duram</h2>
+      <p>Hábitos funcionam melhor quando são específicos, pequenos e conectados a gatilhos já existentes. Use a técnica do <em>1% melhor</em>: pequenas melhorias diárias acumulam.</p>
+      <h3>Estratégias práticas</h3>
+      <ul>
+        <li><strong>Empilhar hábitos</strong>: “Depois de escovar os dentes, bebo um copo d’água”.</li>
+        <li><strong>Deixar fácil</strong>: garrafa de água à vista, tênis perto da porta, legumes já lavados.</li>
+        <li><strong>Rastrear</strong>: marque no calendário os dias de treino e de sono adequado.</li>
+        <li><strong>Planejar deslizes</strong>: se falhar um dia, retome no seguinte sem culpa.</li>
+      </ul>
+    </section>
+
+    <section id="checkups">
+      <h2>Check-ups e prevenção</h2>
+      <p>Prevenir é mais barato e eficiente do que remediar. Vacinas em dia, consultas periódicas e rastreios apropriados à idade e histórico familiar ajudam a detectar problemas cedo. Em caso de sintomas persistentes, procure assistência.</p>
+    </section>
+
+    <section id="rotina7">
+      <h2>Rotina prática de 7 dias</h2>
+      <p>Use como referência e adapte à sua realidade.</p>
+      <ul>
+        <li><strong>Dia 1 – Organização</strong>: defina horários aproximados de dormir/acordar; planeje 3 refeições base; separe 3 treinos de 10–20 min.</li>
+        <li><strong>Dia 2 – Hidratação</strong>: meta de levar água com você o dia todo. Urina amarelo-claro é um bom sinal.</li>
+        <li><strong>Dia 3 – Força</strong>: sequência curta de corpo todo (veja a seção de exercícios).</li>
+        <li><strong>Dia 4 – Sono</strong>: desligue telas 60 min antes de deitar; teste respiração 4-4-6.</li>
+        <li><strong>Dia 5 – Prato colorido</strong>: adicione uma porção de vegetal extra no almoço e jantar.</li>
+        <li><strong>Dia 6 – Caminhada</strong>: 20–30 min ao ar livre, se possível ao sol da manhã.</li>
+        <li><strong>Dia 7 – Revisão</strong>: veja o que funcionou, ajuste metas e comemore pequenas vitórias.</li>
+      </ul>
+
+      <div class="cta">
+        <strong>Dica bônus:</strong> marque no calendário as próximas semanas e mantenha a consistência. Melhor pouco e sempre do que muito e raramente.
+      </div>
+    </section>
+
+    <section id="faq" class="faq" aria-label="Perguntas frequentes">
+      <h2>Perguntas frequentes (FAQ)</h2>
+
+      <details>
+        <summary>Preciso eliminar totalmente açúcar e pão?</summary>
+        <p>Não necessariamente. Para a maioria das pessoas, reduzir a frequência e as porções já ajuda bastante. Foque em comida de verdade na maior parte do tempo e mantenha guloseimas para ocasiões especiais.</p>
+      </details>
+
+      <details>
+        <summary>Qual é o “melhor” exercício para saúde?</summary>
+        <p>O melhor é o que você consegue fazer de forma contínua. Uma base com caminhadas + treinos de força simples já traz grandes benefícios. Com o tempo, experimente outras modalidades.</p>
+      </details>
+
+      <details>
+        <summary>Quantas horas de sono eu preciso?</summary>
+        <p>A maioria dos adultos se dá bem com 7–9 horas. Observe seu corpo: se você acorda descansado sem alarme e mantém energia ao longo do dia, está no caminho certo.</p>
+      </details>
+
+      <details>
+        <summary>Posso começar a treinar mesmo sem condicionamento?</summary>
+        <p>Sim, mas vá devagar e respeite limites. Comece com 10 minutos, adapte exercícios conforme necessidade e, se houver dor, interrompa e busque orientação.</p>
+      </details>
+
+      <details>
+        <summary>Suplementos são necessários?</summary>
+        <p>Na maioria dos casos, uma alimentação equilibrada supre o essencial. Suplementos podem ser úteis em situações específicas sob orientação profissional.</p>
+      </details>
+    </section>
+
+    <section id="conclusao">
+      <h2>Conclusão</h2>
+      <p>Saúde e bem-estar nascem de um conjunto de pequenas escolhas repetidas. Quando você cuida do sono, move o corpo, se alimenta de forma simples e gerencia o estresse, tudo o mais fica mais fácil. Comece hoje com um passo viável – uma caminhada curta, um prato mais colorido, deitar 30 minutos mais cedo – e permita que a constância faça o trabalho pesado.</p>
+    </section>
+
+    <footer class="article">
+      <p>Publicado em <time datetime="2025-08-20">20/08/2025</time> • Categoria: Saúde e Bem-Estar</p>
+      <p>Gostou do conteúdo? Compartilhe e salve para revisar durante a semana.</p>
+    </footer>
+  </article>
+
+  <section aria-label="Links úteis" class="container" style="padding:0;margin-top:18px">
+    <div class="note">
+      <p><strong>Leituras relacionadas:</strong>
+        <a href="#alimentacao">Alimentação</a> •
+        <a href="#sono">Sono</a> •
+        <a href="#exercicio">Exercícios</a> •
+        <a href="#mental">Saúde mental</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+</body>
+        </html>
 
   <!-- Conteúdo -->
   <div class="container">
