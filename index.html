@@ -1735,6 +1735,60 @@
   <a href="sobre.html">Sobre</a>
   <a href="contato.html">Contato</a>
   <a href="politica.html">Política de Privacidade</a>
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Avaliação com Estrelas</title>
+  <style>
+    .stars {
+      direction: rtl;
+      display: inline-flex;
+      font-size: 40px;
+      cursor: pointer;
+    }
+    .stars input {
+      display: none;
+    }
+    .stars label {
+      color: #ccc;
+      transition: color 0.2s;
+    }
+    .stars input:checked ~ label,
+    .stars label:hover,
+    .stars label:hover ~ label {
+      color: gold;
+    }
+  </style>
+</head>
+<body>
+  <h2>Avalie nosso site:</h2>
+  <div class="stars">
+    <input type="radio" id="star5" name="rating" value="5"><label for="star5">★</label>
+    <input type="radio" id="star4" name="rating" value="4"><label for="star4">★</label>
+    <input type="radio" id="star3" name="rating" value="3"><label for="star3">★</label>
+    <input type="radio" id="star2" name="rating" value="2"><label for="star2">★</label>
+    <input type="radio" id="star1" name="rating" value="1"><label for="star1">★</label>
+  </div>
+
+  <script>
+    const stars = document.querySelectorAll("input[name='rating']");
+    
+    // Carregar nota salva
+    const savedRating = localStorage.getItem("rating");
+    if (savedRating) {
+      document.querySelector(`#star${savedRating}`).checked = true;
+    }
+
+    // Salvar nota ao clicar
+    stars.forEach(star => {
+      star.addEventListener("change", () => {
+        localStorage.setItem("rating", star.value);
+      });
+    });
+  </script>
+</body>
+</html>
 </nav>
   </nav>
   </footer>
