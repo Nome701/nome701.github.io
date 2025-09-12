@@ -1,3 +1,48 @@
+<!-- Barra de Pesquisa -->
+<form method="get" action="https://www.google.com/search" target="_blank" class="search-box">
+  <input type="text" name="q" placeholder="Pesquisar no site..." required>
+  <input type="hidden" name="sitesearch" value="https://nome701.github.io">
+  <button type="submit">🔍</button>
+</form>
+
+<!-- Estilo da barra de pesquisa -->
+<style>
+  .search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  }
+
+  .search-box input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+
+  .search-box button {
+    background: #4CAF50;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .search-box button:hover {
+    background: #45a049;
+  }
+</style>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
