@@ -1,4 +1,32 @@
-<!-- Barra de Pesquisa -->
+<!-- Banner de Cookies -->
+<div id="cookie-banner" style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2c2c2c;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+    z-index: 9999;
+    display: none;
+">
+    Este site utiliza cookies para melhorar sua experiência. 
+    <a href="/privacidade.html" style="color: #00bfff; text-decoration: underline;">Saiba mais</a>.
+    <button onclick="aceitarCookies()" style="
+        margin-left: 15px;
+        background: #00bfff;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        border-radius: 5px;
+        cursor: pointer;
+    ">
+        Aceitar
+    </button>
+</div>
+<!-- Barra de Pesquisa -->ɓ
 
 <form method="get" action="https://www.google.com/search" target="_blank" class="search-box">
   <input type="text" name="q" placeholder="Pesquisar no site..." required>
