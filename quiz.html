@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Nível de Estresse</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+    h1 { color: #333; }
+    .quiz-container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #f9f9f9;
+    }
+    .question { margin-bottom: 15px; font-weight: bold; }
+    .options label { display: block; margin-bottom: 8px; }
+    button {
+      margin-top: 15px;
+      background: #00bfff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz: Qual seu nível de estresse?</h1>
+    
+    <div class="question">1. Com que frequência você se sente cansado mentalmente?</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="1"> Raramente</label>
+      <label><input type="radio" name="q1" value="2"> Às vezes</label>
+      <label><input type="radio" name="q1" value="3"> Frequentemente</label>
+    </div>
+
+    <div class="question">2. Você tem dificuldade para dormir?</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="1"> Não</label>
+      <label><input type="radio" name="q2" value="2"> Às vezes</label>
+      <label><input type="radio" name="q2" value="3"> Sim, quase sempre</label>
+    </div>
+
+    <div class="question">3. Como você reage a imprevistos?</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="1"> Fico calmo</label>
+      <label><input type="radio" name="q3" value="2"> Fico um pouco nervoso</label>
+      <label><input type="radio" name="q3" value="3"> Fico muito estressado</label>
+    </div>
+
+    <button onclick="calcularResultado()">Ver Resultado</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function calcularResultado() {
+      let score = 0;
+      for (let i = 1; i <= 3; i++) {
+        let resposta = document.querySelector(`input[name="q${i}"]:checked`);
+        if (resposta) {
+          score += parseInt(resposta.value);
+        }
+      }
+
+      let resultado = "";
+      if (score <= 3) {
+        resultado = "Baixo estresse 😌 — Continue cuidando da sua saúde mental!";
+      } else if (score <= 6) {
+        resultado = "Estresse moderado 😐 — Tente praticar atividades relaxantes.";
+      } else {
+        resultado = "Alto estresse 😣 — Considere buscar formas de aliviar a pressão.";
+      }
+
+      document.getElementById("result").innerText = resultado;
+    }
+  </script>
+</body>
+</html>
