@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Saúde</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f8fc;
+      padding: 20px;
+      color: #333;
+    }
+    .quiz-container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #0077b6;
+    }
+    .question {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+    .options label {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .options label:hover {
+      background: #e6f2ff;
+    }
+    button {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      background: #0077b6;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #005f87;
+    }
+    #result {
+      margin-top: 20px;
+      font-size: 18px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Quiz de Saúde</h1>
+    <form id="quizForm">
+      <div class="question">
+        1. Com que frequência você faz exercícios físicos?
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q1" value="1"> Nunca</label>
+        <label><input type="radio" name="q1" value="2"> 1-2 vezes por semana</label>
+        <label><input type="radio" name="q1" value="3"> 3-5 vezes por semana</label>
+        <label><input type="radio" name="q1" value="4"> Mais de 5 vezes por semana</label>
+      </div>
+
+      <div class="question">
+        2. Quantas horas você dorme por noite?
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q2" value="1"> Menos de 5 horas</label>
+        <label><input type="radio" name="q2" value="2"> 5-6 horas</label>
+        <label><input type="radio" name="q2" value="3"> 7-8 horas</label>
+        <label><input type="radio" name="q2" value="4"> Mais de 8 horas</label>
+      </div>
+
+      <div class="question">
+        3. Como está sua alimentação?
+      </div>
+      <div class="options">
+        <label><input type="radio" name="q3" value="1"> Muitas comidas industrializadas</label>
+        <label><input type="radio" name="q3" value="2"> Mais ou menos equilibrada</label>
+        <label><input type="radio" name="q3" value="3"> Boa parte saudável</label>
+        <label><input type="radio" name="q3" value="4"> Muito saudável</label>
+      </div>
+
+      <button type="button" onclick="calcularResultado()">Ver Resultado</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function calcularResultado() {
+      const form = document.forms['quizForm'];
+      let score = 0;
+      for (let i = 1; i <= 3; i++) {
+        const resposta = form['q' + i].value;
+        if (resposta) score += parseInt(resposta);
+      }
+
+      let resultado = "";
+      if (score <= 4) {
+        resultado = "⚠️ Sua saúde precisa de mais atenção! Tente melhorar seus hábitos.";
+      } else if (score <= 7) {
+        resultado = "🙂 Você está no caminho, mas pode melhorar sua rotina!";
+      } else if (score <= 10) {
+        resultado = "✅ Muito bem! Seus hábitos de saúde estão bons.";
+      } else {
+        resultado = "🏆 Excelente! Você cuida muito bem da sua saúde!";
+      }
+
+      document.getElementById("result").innerText = resultado;
+    }
+  </script>
+</body>
+</html>
